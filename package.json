@@ -4,7 +4,8 @@
   "description": "",
   "main": "code.js",
   "scripts": {
-    "styles": "lessc styles2.less styles2.css styles.css"
+    "styles": "lessc styles2.less styles2.css styles.css",
+    "bundle": "webpack"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,11 @@
   },
   "homepage": "https://github.com/elinmariaskanne/filmjavascript#readme",
   "devDependencies": {
-    "less": "^3.0.1"
+    "less": "^3.0.1",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.11"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
   }
 }

@@ -1,3 +1,6 @@
+let movieData = require("./data");
+let $ = require("jquery");
+
 function renderMovie(data){
     $(".infosection h1").text(data.title);   
     $(".infosection p").text(data.review);
