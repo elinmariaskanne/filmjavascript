@@ -1,0 +1,22 @@
+{
+  "name": "film_js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "code.js",
+  "scripts": {
+    "styles": "lessc styles2.less styles2.css styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elinmariaskanne/filmjavascript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elinmariaskanne/filmjavascript/issues"
+  },
+  "homepage": "https://github.com/elinmariaskanne/filmjavascript#readme",
+  "devDependencies": {
+    "less": "^3.0.1"
+  }
+}

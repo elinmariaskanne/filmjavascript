@@ -1,35 +1,25 @@
 .container {
-
-    width: 700px;
-  
-    margin: 10px auto;
-  
-    display: flex;
-  
-    flex-direction: row;
-  
-    background-color: orange;
-  
-    padding: 10px;
-  
-  }
-  
-  
-  
-  .poster {
-  
-    max-width: 200px;
-  
-    max-height: 350px;
-  
-  }
-  
-  
-  
-  .infosection {
-  
-    /* flex-grow: 1; */
-  
-    padding: 15px;
-  
-  }
+  width: 700px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: row;
+  background-color: #d0c8ff;
+  padding: 10px;
+}
+.poster {
+  max-width: 200px;
+  max-height: 350px;
+}
+.infosection {
+  flex-grow: 1;
+  padding: 15px;
+}
+.stars span {
+  color: #264f7f;
+  user-select: none;
+  cursor: pointer;
+  font-size: 35px;
+}
+.stars .filled {
+  color: black;
+}
