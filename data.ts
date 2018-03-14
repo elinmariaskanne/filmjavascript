@@ -1,4 +1,7 @@
-export const movieData = {
+import { Review } from "./interfaces";
+
+
+export const movieData: Review = {
     title: "Inception",
     // tslint:disable-next-line:max-line-length
     // tslint:disable-next-line:object-literal-sort-keys
