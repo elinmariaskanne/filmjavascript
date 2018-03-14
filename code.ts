@@ -20,13 +20,46 @@ function changeStarRating(rating) {
       }
     }
 
+const ui = {
+
+  title: $(".infosection h1"),
+
+  review: $(".infosection p"),
+
+  poster: $(".poster"),
+
+  actors: $(".infosection ul"),
+
+  rating: $(".stars"),
+
+  stars: [
+
+    $("[data-rating-id='1']"),
+
+    $("[data-rating-id='2']"),
+
+    $("[data-rating-id='3']"),
+
+    $("[data-rating-id='4']"),
+
+    $("[data-rating-id='5']"),
+
+  ],
+
+};
 // tslint:disable-next-line:only-arrow-functions
-$(".stars").on("click", "span", function(e) {
+ui.rating.on("click", "span", (e) => {
   const star = $(e.target);
   // tslint:disable-next-line:radix
   const rating = parseInt(star.attr("data-rating-id"));
   changeStarRating(rating);
 });
+// $(".stars").on("click", "span", function(e) {
+// const star = $(e.target);
+//   // tslint:disable-next-line:radix
+//   const rating = parseInt(star.attr("data-rating-id"));
+//   changeStarRating(rating);
+// });
 
 renderMovie(movieData);
 
