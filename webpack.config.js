@@ -3,7 +3,7 @@ const WebpackNotifierPlugin = require("webpack-notifier");
 
 module.exports = {
     mode: 'development',
-    entry: './code.js',
+    entry: './code.ts',
     output: {
       path:path.resolve(__dirname, "distribution"),
       filename: 'bundle.js'
@@ -16,4 +16,13 @@ module.exports = {
   plugins: [
     new WebpackNotifierPlugin({alwaysNotify: true}),
   ],
+  resolve: {
+    extensions: ['.ts', '.js']
+  },
+  module: {
+    rules: [
+      // all files with a `.ts` extension will be handled by `ts-loader`
+      { test: /\.ts$/, loader: 'ts-loader' }
+    ]
+  },
 };
