@@ -4,7 +4,7 @@
   "description": "",
   "main": "code.js",
   "scripts": {
-    "styles": "lessc styles2.less distrubution/styles2.css",
+    "styles": "lessc styles2.less distribution/styles2.css",
     "bundle": "webpack",
     "start:dev": "webpack-dev-server",
     "copyindex": "cp index2.html distribution/index.html",
