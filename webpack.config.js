@@ -10,7 +10,7 @@ module.exports = {
     },
     devServer: {
         contentBase: path.resolve(__dirname, "distribution"), // the root for the server
-        watchContentBase: true, // so we reload if other stuff like CSS changes
+        watchContentBase: true, // so we reloanpm run copyindexd if other stuff like CSS changes
         port: 9000, // it'll now be at http://localhost:9000
   },
   plugins: [
