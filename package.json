@@ -4,8 +4,12 @@
   "description": "",
   "main": "code.js",
   "scripts": {
-    "styles": "lessc styles2.less styles2.css styles.css",
-    "bundle": "webpack"
+    "styles": "lessc styles2.less distrubution/styles2.css",
+    "bundle": "webpack",
+    "start:dev": "webpack-dev-server",
+    "copyindex": "cp index.html distribution/index.html",
+    "build": "npm run bundle && npm run styles && npm run copyindex"
+    
   },
   "repository": {
     "type": "git",
@@ -20,7 +24,9 @@
   "devDependencies": {
     "less": "^3.0.1",
     "webpack": "^4.1.1",
-    "webpack-cli": "^2.0.11"
+    "webpack-cli": "^2.0.11",
+    "webpack-dev-server": "^3.1.1",
+    "webpack-notifier": "^1.6.0"
   },
   "dependencies": {
     "jquery": "^3.3.1"
